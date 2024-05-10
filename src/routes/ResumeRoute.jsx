@@ -1,5 +1,7 @@
+import Resume from '../components/Resume';
+
 const ResumeRoute = () => {
-  return <div>Resume Route</div>;
+  return <Resume />;
 };
 
 export default ResumeRoute;
