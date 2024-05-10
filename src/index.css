@@ -7,6 +7,10 @@ body {
   @apply bg-black text-gray-500;
 }
 
+.header-content {
+  @apply bg-[url('./assets/header.svg')] w-full bg-cover min-h-56 transform rotate-180;
+}
+
 .mobile-nav-visible {
   @apply absolute right-5 bg-slate-900 min-h-96 min-w-52 rounded animate-slidemenu;
 }

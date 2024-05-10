@@ -38,7 +38,7 @@ const Navigation = () => {
         />
       )}
       <ul
-        className={`md:right-0 md:relative md:flex md:bg-inherit md:min-h-0 ${
+        className={`md:right-0 md:relative md:flex md:bg-inherit md:min-h-0 z-10 ${
           isMobile ? 'mobile-nav-visible' : 'hidden'
         }`}
       >
