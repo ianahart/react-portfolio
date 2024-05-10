@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const NavigationLink = ({ link, changeLink }) => {
-  const {  path, title, active } = link;
+  const { path, title, active } = link;
 
   return (
     <li className="md:px-2 md:m-0 m-4" onClick={() => changeLink(path)}>
