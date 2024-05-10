@@ -1,5 +1,7 @@
+import Portfolio from '../components/Portfolio';
+
 const PortfolioRoute = () => {
-  return <div>Portfolio route</div>;
+  return <Portfolio />;
 };
 
 export default PortfolioRoute;
