@@ -1,5 +1,7 @@
+import About from '../components/About';
+
 const AboutRoute = () => {
-  return <div>About Route</div>;
+  return <About />;
 };
 
 export default AboutRoute;
