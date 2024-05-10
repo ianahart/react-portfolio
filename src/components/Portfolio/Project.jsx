@@ -12,11 +12,7 @@ const Project = ({ data }) => {
   return (
     <div className="justify-self-center my-8 mx-4">
       <h3 className="rounded p-1 my-1 bg-slate-900 text-green-400 text-center font-bold">{name}</h3>
-      <div
-        onMouseOver={handleMouseOver}
-        onMouseLeave={handleMouseLeave}
-        className="relative brightness-50 hover:brightness-100 active:brightness-100"
-      >
+      <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} className="relative">
         <img className="rounded h-[300px]" src={image_src} alt={name} />
         {isHovered && (
           <div className="absolute h-full w-full  top-0 z-10 text-white font-bold bg-slate-900 opacity-70 p-2 rounded">
