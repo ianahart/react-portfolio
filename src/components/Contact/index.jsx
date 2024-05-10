@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="my-2">
         <h3 className="font-display text-2xl text-green-400 text-center">Get In Touch</h3>
       </div>
-        <Form />
+      <Form />
     </section>
   );
 };
