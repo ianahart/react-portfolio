@@ -21,8 +21,35 @@ const Form = () => {
     [setContactForm]
   );
 
+  const clearErrors = (form) => {
+    for (const key of Object.keys(form)) {
+      handleUpdateField(key, '', 'error');
+    }
+  };
+
+  const validateForm = (form) => {
+    let isValidated = true;
+
+    for (const key of Object.keys(form)) {
+      if (!form[key].value) {
+        handleUpdateField(key, `${key} is a required field`, 'error');
+        isValidated = false;
+      }
+    }
+    return isValidated;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    clearErrors(contactForm);
+    if (!validateForm(contactForm)) {
+      return;
+    }
+    console.log('Form submitted');
+  };
+
   return (
-    <form className="md:max-w-[650px] max-w-full">
+    <form onSubmit={handleSubmit} className="md:max-w-[650px] max-w-full p-1">
       <div className="my-4">
         <InputField
           handleUpdateField={handleUpdateField}
@@ -64,6 +91,11 @@ const Form = () => {
           errorField="Message"
           placeholder="Enter your message"
         />
+      </div>
+      <div className="flex justify-center">
+        <button className="btn w-full" type="submit">
+          Send Message
+        </button>
       </div>
     </form>
   );
