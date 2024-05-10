@@ -55,3 +55,21 @@ export const projectsData = [
     image_src: weatherImg,
   },
 ];
+
+export const frontendSkills = [
+  { id: 1, name: 'HTML' },
+  { id: 2, name: 'CSS' },
+  { id: 3, name: 'JavaScript' },
+  { id: 4, name: 'jQuery' },
+  { id: 5, name: 'Responsive designs' },
+  { id: 6, name: 'React' },
+  { id: 7, name: 'Bootstrap' },
+];
+
+export const backendSkills = [
+  { id: 1, name: 'APIs' },
+  { id: 2, name: 'Node' },
+  { id: 3, name: 'Express' },
+  { id: 4, name: 'mySQL, Sequelize' },
+  { id: 5, name: 'noSQL, MongoDB, Mongoose' },
+];
