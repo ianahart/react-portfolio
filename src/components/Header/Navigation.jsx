@@ -24,7 +24,7 @@ const Navigation = () => {
   };
 
   return (
-    <section>
+    <nav>
       {!isMobile && (
         <RxHamburgerMenu
           onClick={() => setIsMobile(true)}
@@ -37,7 +37,7 @@ const Navigation = () => {
           className="md:hidden text-2xl text-green-400 cursor-pointer"
         />
       )}
-      <div
+      <ul
         className={`md:right-0 md:relative md:flex md:bg-inherit md:min-h-0 ${
           isMobile ? 'mobile-nav-visible' : 'hidden'
         }`}
@@ -45,8 +45,8 @@ const Navigation = () => {
         {links.map((link) => {
           return <NavigationLink key={link.id} link={link} changeLink={changeLink} />;
         })}
-      </div>
-    </section>
+      </ul>
+    </nav>
   );
 };
 
