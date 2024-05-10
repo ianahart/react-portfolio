@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import NavigationLink from './NavigationLink';
+import { useLocation } from 'react-router-dom';
 
 const linksState = [
   { id: 1, path: '/', title: 'About me', active: true },
@@ -12,11 +13,18 @@ const linksState = [
 ];
 
 const Navigation = () => {
+  const location = useLocation();
   const [links, setLinks] = useState(linksState);
   const [isMobile, setIsMobile] = useState(false);
 
-  const changeLink = (id) => {
-    const updatedLinks = links.map((link) => (link.id === id ? { ...link, active: true } : { ...link, active: false }));
+  useEffect(() => {
+    changeLink(location.pathname);
+  }, [location.pathname]);
+
+  const changeLink = (path) => {
+    const updatedLinks = links.map((link) =>
+      link.path === path ? { ...link, active: true } : { ...link, active: false }
+    );
     setLinks(updatedLinks);
     if (isMobile) {
       setIsMobile(false);
