@@ -45,6 +45,9 @@ Take a look around and explore :)
 
 ## Visuals
 
+<img width="650" alt="portfolio" src="https://github.com/ianahart/react-portfolio/assets/29121238/279097fb-5ee0-4b2c-88ba-59acf78df8a9">
+
+
 ## Tests
 
 N/A
