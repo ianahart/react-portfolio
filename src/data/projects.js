@@ -3,7 +3,7 @@ import filmScoutImg from '../assets/film_scout.png';
 import passwordGeneratorImg from '../assets/password-generator.png';
 import horiseonImg from '../assets/horiseon.png';
 import workDaySchedulerImg from '../assets/scheduler.png';
-import weatherImg from '../assets/weather-dashboard.png';
+import seessImg from '../assets/seess.png';
 
 export const projectsData = [
   {
@@ -48,11 +48,11 @@ export const projectsData = [
   },
   {
     id: 6,
-    name: 'Weather Dashboard',
-    tools: 'HTML/CSS/JavaScript',
-    github_url: 'https://github.com/ianahart/weather-dashboard',
-    deployed_url: 'https://ianahart.github.io/weather-dashboard/',
-    image_src: weatherImg,
+    name: 'SeeSS',
+    tools: 'MERN/Graphql',
+    github_url: 'https://github.com/ianahart/SeeSS',
+    deployed_url: 'https://seess-3sv5.onrender.com/',
+    image_src: seessImg,
   },
 ];
 
